@@ -15,6 +15,24 @@ body {
         font-size: 1.5em;
         line-height: 1.5;
     }
+
+    .share {
+        position: fixed;
+        right: 20px;
+    }
+}
+
+.personal-logo {
+    max-height: 3em;
+    max-width: 3em;
+    margin: 5px;
+    float: left;
+}
+
+.site-name {
+    /*vertical-align: center;*/
+    font-size: 3em;
+    display: inline;
 }
 
 .title-link {
@@ -25,17 +43,16 @@ body {
     margin-top: 43px;
 }
 
+
 .post img {
     max-width: 100%;
 }
 
-
-.profile-link img {
-    max-width: 96px;
-    max-height: 96px;
+.post-title {
+    margin-bottom: 30px;
 }
 
-#github-profile img {
-    max-width: 68px;
-    max-height: 68px;
+.share img {
+    max-width: 3em;
+    max-height: 3em;
 }

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 This is the first post.

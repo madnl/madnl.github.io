@@ -2,10 +2,25 @@
 layout: default
 ---
 
-<div class="share">
+<!-- 
+<div class="share navbar-fixed-top">
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="ma_dnl" data-size="large">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </div>
-<div class="post">
-{{content}}
+ -->
+
+<div>
+  <div class="share offset6">
+    <a href="#">
+      <img src="//abs.twimg.com/a/1380824991/images/resources/twitter-bird-blue-on-white.png">
+      <p><label>Tweet</label></p>
+    </a>
+  </div>
+
+  <div class="post">
+    <h3 class="post-title">{{page.title}}</h3>
+    <article>
+      {{content}}
+    </article>
+  </div>
 </div>
