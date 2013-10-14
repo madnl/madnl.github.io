@@ -10,17 +10,38 @@ layout: default
  -->
 
 <div>
-  <div class="share offset6">
+  <!-- <div class="share offset6">
     <a href="#">
       <img src="//abs.twimg.com/a/1380824991/images/resources/twitter-bird-blue-on-white.png">
       <p><label>Tweet</label></p>
     </a>
+  </div> -->
+
+  <div class="share">
+    
+    <div class="share-box">
+      {% include twitter.widget.html %}
+    </div>
+
+    <div class="share-box">
+      {% include facebook.widget.html %}
+    </div>
+
+    <div class="share-box">
+      {% include gplus.widget.html %}
+    </div>
+
   </div>
 
+  
   <div class="post">
     <h3 class="post-title">{{page.title}}</h3>
     <article>
       {{content}}
     </article>
   </div>
+</div>
+
+<div class="comments">
+  {% include gplus-comments.html %}
 </div>

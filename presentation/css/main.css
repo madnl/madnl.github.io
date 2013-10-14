@@ -12,13 +12,13 @@ body {
 @media screen and (min-width: 1024px) {
     .container {
         width: 848px;
-        font-size: 1.5em;
+        font-size: 16px;
         line-height: 1.5;
     }
 
     .share {
         position: fixed;
-        right: 20px;
+        right: 5px;
     }
 }
 
@@ -55,4 +55,12 @@ body {
 .share img {
     max-width: 3em;
     max-height: 3em;
+}
+
+.share-box {
+    margin-bottom: 10px;
+}
+
+.comments {
+    
 }
