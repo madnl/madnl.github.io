@@ -108,11 +108,13 @@ header {
   border-bottom: 1px dotted #ddd;
   padding-bottom: 28px;
   margin-bottom: 32px;
+  font-size: 0.8em;
 }
 
 header h1 {
   float: left;
   margin-bottom: 2px;
+  font-size: 1.7em;
 }
 
 header h1 a {
@@ -178,7 +180,20 @@ footer {
 /************* POST LIST ***********/
 
 .post-summary {
-  
+  margin-bottom: 54px;
+}
+
+.post-title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.post-summary .post-title {
+  margin: 0 0 10px;
+}
+
+.post-summary a {
+  color: #111;
 }
 
 .share {

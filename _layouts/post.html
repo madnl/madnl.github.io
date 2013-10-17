@@ -5,7 +5,7 @@ layout: default
 
 <section>
 
-  <h3>{{page.title}}</h3>
+  <h1 class="post-title">{{page.title}}</h1>
 
   {{content}}
 
@@ -15,17 +15,11 @@ layout: default
 
   <p>Share this post if you've enjoyed it!</p>
   
-  <span class="share-box" style="float:left">
-    {% include twitter.widget.html %}
-  </span>
-
-  <span class="share-box">
-    {% include facebook.widget.html %}
-  </span>
-
-  <span class="share-box">
-    {% include gplus.widget.html %}
-  </span>
+  
+<div style="position: fixed; right: 300px; top: 140px;">
+  <div><img src="/presentation/img/twitter.png" style="max-height: 48px;"></img></div>
+  <div><img src="/presentation/img/facebook.png" style="max-height: 48px;"></img></div>
+</div>
 
 
 </section>
