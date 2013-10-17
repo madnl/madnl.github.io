@@ -196,16 +196,40 @@ footer {
   color: #111;
 }
 
-.share {
-  /*width: 100%;*/
-  border-top: 1px dotted #e5e5e5;
+/**************** POST ****************/
+
+.post {
+  border-bottom: dotted 1px #ddd;
 }
 
-.share .share-box {
-  display: inline;
-  vertical-align: middle;
-  /*margin: -4px 0 0 5px;*/
+.share {
+  /*position: fixed;*/
+  /*left: 50%;*/
+  /*margin-left: 380px;*/
+  /*top: 64px;*/
+  width: 100%;
+  margin-top: 12px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  padding-bottom: 64px;
 }
+
+.share label {
+  float: left;
+  width: 200px;
+  font-size: 0.9em;
+}
+
+.share-item {
+  width: 84px;
+  float: left;
+}
+
+#gplus-share {
+  margin-left: 16px;
+}
+
+
 
 @media print, screen and (max-width: 960px) {
   
@@ -271,6 +295,14 @@ footer {
   
   header ul {
     display:none;
+  }
+
+  .share {
+    width: 240px;
+  }
+
+  .share .share-item {
+    width: 80px;
   }
 }
 

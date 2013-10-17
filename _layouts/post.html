@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<section>
+<section class="post">
 
   <h1 class="post-title">{{page.title}}</h1>
 
@@ -11,15 +11,25 @@ layout: default
 
 </section>
 
-<section class="share">
+  
 
-  <p>Share this post if you've enjoyed it!</p>
+<nav class="share">
+  <label>Share if you think it's worth it!</label>
+
+  <div class="share-item">
+    {% include twitter.widget.html %}
+  </div>
+  <div class="share-item" id="gplus-share">
+    {% include gplus.widget.html %}
+  </div>
+  <div class="share-item" id="fb-drawer">
+    {% include facebook.widget.html %}
+  </div>
+</nav>
   
-  
-<div style="position: fixed; right: 300px; top: 140px;">
+<!-- <div style="position: fixed; right: 300px; top: 140px;">
   <div><img src="/presentation/img/twitter.png" style="max-height: 48px;"></img></div>
-  <div><img src="/presentation/img/facebook.png" style="max-height: 48px;"></img></div>
+  <div><img src="/presentation/img/fb.png" style="max-height: 48px;"></img></div>
+  <div><img src="/presentation/img/google+.png" style="max-height: 48px;"></img></div>
 </div>
-
-
-</section>
+ -->
