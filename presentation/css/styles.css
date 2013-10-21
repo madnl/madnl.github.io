@@ -171,10 +171,11 @@ hr {
 }
 
 footer {
-  width:270px;
+  /*width:270px;*/
   /*float:left;*/
   /*position:fixed;*/
   bottom:50px;
+  text-align: center;
 }
 
 /************* POST LIST ***********/
@@ -194,6 +195,10 @@ footer {
 
 .post-summary a {
   color: #111;
+}
+
+.post-summary p {
+  font-size: 1.2em;
 }
 
 /**************** POST ****************/
@@ -229,6 +234,34 @@ footer {
   margin-left: 16px;
 }
 
+/**************** ABOUT ****************/
+
+
+section.about {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1em;
+}
+
+.avatar {
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  max-height: 100px;
+}
+
+
+
+.intro p.follow-me {
+  margin-bottom: 5px;
+}
+
+.follow-me {
+  vertical-align: bottom;
+}
 
 
 @media print, screen and (max-width: 960px) {
@@ -268,6 +301,7 @@ footer {
   .share {
     border: none;
   }
+
 }
 
 @media print, screen and (max-width: 720px) {
@@ -302,8 +336,13 @@ footer {
   }
 
   .share .share-item {
-    width: 80px;
+    width: 74px;
   }
+
+  .share label {
+    display: none;
+  }
+
 }
 
 @media print {
