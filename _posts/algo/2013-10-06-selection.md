@@ -27,7 +27,7 @@ collection.
 
 However, we can do better. The best known solution to this problem is the
 [Quickselect](http://en.wikipedia.org/wiki/Quickselect) algorithm
-which is derivated from [Quicksort](http://en.wikipedia.org/wiki/Quicksort). Quickselect
+which is derived from [Quicksort](http://en.wikipedia.org/wiki/Quicksort). Quickselect
 has linear expected time complexity and constant memory usage. It suffers from
 the same issues as Quicksort - mainly it can get to quadratic time if
 we're really unlucky, but for most cases it suffices.
@@ -137,7 +137,7 @@ If you're going to shout that this is not idiomatic Scala, please consider
 that this is just a translation of the algorithm as it is found
 [here](http://algs4.cs.princeton.edu/23quicksort/).
 
-So which one is faster? Let's benchmark these for `N = 10.000.000` an various
+So which one is faster? Let's benchmark these for `N = 10.000.000` and various
 values of K. For fun, lets also add the "median of 3" variant of quick-select where
 we choose the pivot more intelligently and also a version of the min-list algorithm
 where we use `java.util.PriorityQueue` instead of the Scala collection.

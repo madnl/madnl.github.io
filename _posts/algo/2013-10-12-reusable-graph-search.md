@@ -21,7 +21,7 @@ sake of performance, but in most cases they are.
 
 Let's name the two concerns, so that we may refer to them more easily.
 
-The first phase shall be called `explore`. It's purpose is to discover nodes
+The first phase shall be called `explore`. Its purpose is to discover nodes
 in the graph based on a certain policy. It involves starting from a seed
 node and iteratively reaching out to adjacent nodes. The order in which
 the adjacent nodes are considered is usually the distinctive mark of the
@@ -37,7 +37,7 @@ building blocks as we shall see below.
 An interesting observation is that the two phases are actually part of a
 producer-consumer setup. The explore phase is the producer, and the items it
 produces are the discovered nodes. The inspect phase consumes the nodes
-until it finds what it is looking for, or there are no more nodes to discover.
+until it finds what it is looking for or there are no more nodes to discover.
 
 To allow these two phases to communicate we need a data structure that passes
 information from the one to the other.
@@ -68,7 +68,7 @@ an `initial` node - representing the initial state of the problem. It will also
 have an `expand` function which gives us all the accessible states from a
 given current state.
 
-Usually in problems transitioning from a state `A` to a state `B` involves a
+Usually in problems, transitioning from a state `A` to a state `B` involves a
 cost and our `expand` function should reflect this in it's type:
 
 {% highlight haskell %}
@@ -92,7 +92,7 @@ Each node has a `state`, an optional `parent` (the node that lead us to it) and
 a `distance` representing how many steps it took to arrive from the initial state
 to this node.
 
-No we can finally give a type for the explore phase:
+Now we can finally give a type for the explore phase:
 
 {% highlight haskell %}
 
